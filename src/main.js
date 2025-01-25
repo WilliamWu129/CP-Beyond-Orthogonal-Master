@@ -1,10 +1,11 @@
 // Code Practice: Beyond Orthogonal
-// Name: Nathan Yu
+// Name: William Wu
 // Date: 1/24/25
 
 // Spritesheet by ElvGames: https://elv-games.itch.io/free-fantasy-dreamland-sprites
 
 "use strict"
+
 
 let config = {
     type: Phaser.AUTO,
