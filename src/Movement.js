@@ -112,15 +112,14 @@ class Movement extends Phaser.Scene {
 
     update() {
         let playerDirection = "down";
-
-        //left/right
+        //left and right
 
         let playerVector = new Phaser.Math.Vector2(0, 0);
 
         if (cursors.left.isDown) {
             playerVector.x = -1;
-            playerDirection = "left";
-            //this.player.play('walk-down', true)
+            playerDirection = "left"; //this.player.play('walk-down', true)
+
         } else if (cursors.right.isDown) {
             playerVector.x = 1;
             playerDirection = "right";
@@ -136,8 +135,6 @@ class Movement extends Phaser.Scene {
 
         playerVector.normalize();
 
-        // this.player.x += playerVector.x * this.PLAYER_VELOCITY;
-        // this.player.y += playerVector.y * this.PLAYER_VELOCITY;
 
         this.player.setVelocity(
             this.PLAYER_VELOCITY * playerVector.x,
